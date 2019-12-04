@@ -1,0 +1,15 @@
+---
+title: "post--2019-04-21-hello-world0"
+category: [test]
+permalink: /aa/
+layout: default
+---
+
+<h2>{{page.title}}13123</h2>
+<p>this is my first demo 23</p>
+<p>{{page.date | date_to_string}}</p>
+{% raw %}
+  In Handlebars, {{ this }} will be HTML-escaped, but {{{ that }}} will not.
+{% endraw %}
+We made 2 million dollars {% comment %} in losses {% endcomment %} this year
+

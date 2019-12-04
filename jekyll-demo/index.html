@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div>
+<h2>
+	hello jekyll 12.
+	this is the posts list conente start.
+</h2>
+<ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <span class="post-meta">{{ post.date | date: "%F" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+  <p>this is the posts list conente end</p>
+</div>

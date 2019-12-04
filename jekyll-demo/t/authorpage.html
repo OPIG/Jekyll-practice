@@ -1,0 +1,16 @@
+---
+layout: author
+title: author page
+short_name: atom
+permalink: /btest/
+---
+<ul class="current">
+12sd
+	{% for item in site.authors %}
+		<li>
+			<h2><a href="{{ item.url }}">{{ item.name }}</a></h2>
+			<h2>{{ item.position }}</h2>
+			<h2>{{ item.content | markdownify }}</h2>
+		</li>
+	{% endfor %}
+  </ul>
